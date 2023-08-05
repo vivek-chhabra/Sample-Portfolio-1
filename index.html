@@ -2,35 +2,63 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <!-- tailwind -->
+        <script src="https://cdn.tailwindcss.com"></script>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Complete Responsive Personal Portfolio Website HTML CSS Javascript | Codehal</title>
+        <title>Sample Portfolio - #1</title>
 
         <link rel="stylesheet" href="css/style.css" />
 
         <!-- box icons -->
         <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-        <!-- tailwind -->
-        <script src="https://cdn.tailwindcss.com"></script>
     </head>
 
     <body>
         <!-- header design -->
-        <header>
-            <a href="#">keviv.</a>
+        <header class="header">
+            <a href="#" class="logo flex gap-[10px] items-center">
+                <img src="./images/logo.png" class="w-[3.1rem]" alt="" />
+                <div class="hr w-[1px] rounded h-[40px]"></div>
+                Jacob.
+            </a>
 
+            <!-- nav items -->
             <nav>
-                <a href="#" class=''>Home</a>
-                <a href="#" class=''>About</a>
-                <a href="#" class=''>Education</a>
+                <a href="#" class="active">Home</a>
+                <a href="#" class="">About</a>
+                <a href="#" class="">Education</a>
                 <a href="#">Skills</a>
                 <a href="#">Contact</a>
             </nav>
+            <div class="bx bx-menu" id="menu-icon"></div>
         </header>
 
         <!-- home section design -->
+        <div class="home-section flex items-center">
+            <div class="home-content">
+                <h1>Hi, I'm <span>Jacob Aiden</span></h1>
+                <div class="text-animate">
+                    <h3>Frontend Engineer</h3>
+                </div>
+                <p class="text-[1.6rem] font-semibold my-[2rem] mx-[]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam vitae, ut vel officia obcaecati nisi, soluta hic doloribus perferendis error nostrum impedit porro, est quia perspiciatis aut dicta dolore eum?</p>
+                <div class="btn">
+                    <a href="#" class="">Hire me</a>
+                    <a href="#" class="">Let's talk</a>
+                </div>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="bx bxl-facebook"></i></a>
+                <a href="#"><i class="bx bxl-twitter"></i></a>
+                <a href="#"><i class="bx bxl-linkedin"></i></a>
+            </div>
+            <div class="img-hover"></div>
+        </div>
 
         <!-- about section design -->
+        <div class="about-section">
+
+        </div>
 
         <!-- education section design -->
 
@@ -40,6 +68,6 @@
 
         <!-- footer design -->
 
-        <script src="js/script.js"></script>
+        <script src="./js/script.js"></script>
     </body>
 </html>
