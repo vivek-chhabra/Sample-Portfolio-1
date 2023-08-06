@@ -405,7 +405,7 @@ body {
     overflow: hidden;
     background-color: #3ec5ff1f;
     transition: all .5s ease;
-}
+    }
 
 .education-content .content:hover::before {
     width: 100%;
@@ -425,3 +425,58 @@ body {
     padding-right: .5rem;
 }
 
+/* skills section */
+
+.skills {
+    background: linear-gradient(to bottom, var(--second-bg-color), var(--bg-color));
+    padding: 3rem 9% 2rem;
+    padding-bottom: 7rem;
+}
+
+.skills .skills-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.skills-row .skills-col {
+    flex: 1;
+}
+
+.skills-col .title {
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem;
+}
+
+.skill-box{
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    padding: .5rem 1.5rem;
+}
+
+.skill-box .progress {
+    padding: 1rem 0;
+}
+
+.progress h3 {
+    font-size: 1.5rem;
+    display: flex;  
+    justify-content: space-between;
+}
+
+.progress .bar {
+    height: 2.5rem;
+    border-radius: .6rem;
+    border: .2px solid var(--main-color);
+    padding: .4rem;
+    margin: 1rem 0;
+}
+
+.progress .bar span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: .4rem;
+    background-color: var(--main-color);
+
+}
