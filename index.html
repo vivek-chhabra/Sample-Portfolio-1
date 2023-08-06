@@ -15,49 +15,65 @@
     </head>
 
     <body>
-        <!-- header design -->
-        <header class="header">
-            <a href="#" class="logo flex gap-[10px] items-center">
-                <img src="./images/logo.png" class="w-[3.1rem]" alt="" />
-                <div class="hr w-[1px] rounded h-[40px]"></div>
-                Jacob.
-            </a>
+        <div class="hero h-screen" id="hero">
+            <!-- header design -->
+            <header class="header">
+                <a href="#" class="logo flex gap-[10px] items-center">
+                    <img src="./images/logo.png" class="w-[3.1rem]" alt="" />
+                    <div class="hr w-[1px] rounded h-[40px]"></div>
+                    Jacob.
+                </a>
 
-            <!-- nav items -->
-            <nav>
-                <a href="#" class="active">Home</a>
-                <a href="#" class="">About</a>
-                <a href="#" class="">Education</a>
-                <a href="#">Skills</a>
-                <a href="#">Contact</a>
-            </nav>
-            <div class="bx bx-menu" id="menu-icon"></div>
-        </header>
+                <!-- nav items -->
+                <nav>
+                    <a href="#hero" class="active">Home</a>
+                    <a href="#about" class="">About</a>
+                    <a href="#education" class="">Education</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                <div class="bx bx-menu" id="menu-icon"></div>
+            </header>
 
-        <!-- home section design -->
-        <div class="home-section flex items-center">
-            <div class="home-content">
-                <h1>Hi, I'm <span>Jacob Aiden</span></h1>
-                <div class="text-animate">
-                    <h3>Frontend Engineer</h3>
+            <!-- home section design -->
+            <div class="home-section flex items-center">
+                <div class="home-content">
+                    <h1>Hi, I'm <span>Jacob Aiden</span></h1>
+                    <div class="text-animate">
+                        <h3>Frontend Engineer</h3>
+                    </div>
+                    <p class="text-[1.6rem] font-semibold my-[2rem] mx-[]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam vitae, ut vel officia obcaecati nisi, soluta hic doloribus perferendis error nostrum impedit porro, est quia perspiciatis aut dicta dolore eum?</p>
+                    <div class="btn">
+                        <a href="#" class="">Hire me</a>
+                        <a href="#" class="">Let's talk</a>
+                    </div>
                 </div>
-                <p class="text-[1.6rem] font-semibold my-[2rem] mx-[]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam vitae, ut vel officia obcaecati nisi, soluta hic doloribus perferendis error nostrum impedit porro, est quia perspiciatis aut dicta dolore eum?</p>
-                <div class="btn">
-                    <a href="#" class="">Hire me</a>
-                    <a href="#" class="">Let's talk</a>
+                <div class="social-media">
+                    <a href="#"><i class="bx bxl-facebook"></i></a>
+                    <a href="#"><i class="bx bxl-twitter"></i></a>
+                    <a href="#"><i class="bx bxl-linkedin"></i></a>
                 </div>
+                <div class="img-hover"></div>
             </div>
-            <div class="social-media">
-                <a href="#"><i class="bx bxl-facebook"></i></a>
-                <a href="#"><i class="bx bxl-twitter"></i></a>
-                <a href="#"><i class="bx bxl-linkedin"></i></a>
-            </div>
-            <div class="img-hover"></div>
         </div>
 
         <!-- about section design -->
-        <div class="about-section">
-
+        <div class="about-section h-screen" id="about">
+            <h3 class="head">About <span>Me</span></h3>
+            <div class="about-img flex-none">
+                <img src="./images/about.jpg" alt="">
+                <span class="circle-spin"></span>
+            </div>
+            <div class="about-content">
+                <h3>Frontend Engineer!</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nostrum tenetur recusandae fugit cupiditate blanditiis, corrupti vitae deserunt, vero dicta assumenda placeat iste nobis quos quasi aliquam similique a dignissimos molestias reprehenderit veniam iure. Quae error fuga
+                    aliquam similique, consequatur sed minima cupiditate odit rerum nostrum, corrupti quam! Dicta sunt rem sint a obcaecati, quis at maiores eveniet, dolorem ullam sequi.
+                </p>
+                <div class="btn">
+                    <a href="#">Read More</a>
+                </div>
+            </div>
         </div>
 
         <!-- education section design -->

@@ -1,21 +1,11 @@
-// toggle icon navbar
-let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
+// element variables
+const header = document.querySelector(".header");
 
+window.addEventListener("scroll", () => {
+    if (scrollY > 120) {
+        header.style = `padding: 1rem 9%; background: #091a2570; backdrop-filter: blur(10px)`;
+    } else {
+        header.style = `padding: 2rem 9%; background: none; opacity: 1`;
 
-// scroll sections
-let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header nav a');
-
-window.onscroll = () => {
-
-
-    // sticky header
-
-
-    // remove toggle icon and navbar when click navbar links (scroll)
-
-
-    // animation footer on scroll
-
-}
+    }
+});
