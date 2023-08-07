@@ -23,8 +23,6 @@ for (let i = 0; i < links.length; i++) {
     });
 }
 
-console.log(growth)
-
 // showing growth bar
 for(let i = 0; i < growth.length; i++) {
     progressBars[i].style = `width: ${growth[i].innerHTML}`
