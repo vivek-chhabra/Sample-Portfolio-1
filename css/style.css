@@ -506,6 +506,18 @@ body {
 .contact-section form .input-box .input-field {
     width: 49%;
     margin: 0.8rem 0;
+    position: relative;
+    display: inline-flex;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.contact-section form .textarea-field {
+    margin: 0.8rem 0 2.7rem;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
 }
 
 .contact-section form .input-box .input-field input,
@@ -521,19 +533,33 @@ body {
     border: 0.2rem solid var(--second-bg-color);
 }
 
+.contact-section form .input-box .input-field .focus,
+.contact-section form .textarea-field .focus {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0 !important;
+    height: 100% !important;
+    position: absolute;
+    background-color: #3ec5ff1a;
+    z-index: -1;
+    border-radius: .6rem;
+    transition: all .5s ease;
+}
+
 .contact-section form .input-box .input-field input:focus,
 .contact-section form .textarea-field textarea:focus {
     border-color: var(--main-color);
 }
 
+.contact-section form .input-box .input-field input:focus~.focus,
+.contact-section form .textarea-field textarea:focus~.focus {
+    width: 100% !important;
+}
+
 .contact-section form .input-box .input-field input::placeholder,
 .contact-section form .textarea-field textarea::placeholder {
     color: var(--text-color);
-}
-
-.contact-section form .textarea-field {
-    margin: 0.8rem 0 2.7rem;
-    display: flex;
 }
 
 .contact-section form .textarea-field .focus {
@@ -551,4 +577,59 @@ body {
 
 .num-input::-webkit-inner-spin-button {
     -webkit-appearance: none;
+}
+
+/* footer section */
+
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 9%;
+    background-color: var(--second-bg-color);
+}
+
+.footer-text p {
+    font-size: 1.6rem;
+}
+
+.footer-icon a {
+    display: inline-flex;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    overflow: hidden;
+    z-index: 1;
+    transition: all .5s ease;
+}
+
+.footer-icon a i {
+    font-size: 2rem;
+    color: var(--bg-color);
+}
+
+.footer-icon a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--second-bg-color);
+    z-index: -1;
+    transition: all .3s ease;
+}
+
+.footer-icon a:hover i {
+    color: var(--main-color);
+}
+
+.footer-icon a:hover::before {
+    width: 100%;
 }
