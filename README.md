@@ -15,7 +15,7 @@
 
 <br>
 
-![Uploading 08.08.2023_19.31.27_REC.png…]()
+![08 08 2023_19 31 27_REC](https://github.com/vivek-chhabra/Sample-Portfolio-1/assets/105328667/4a574cd2-fb90-4c40-9bb0-1165ec122bf5)
 
 <br>
 
