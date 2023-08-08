@@ -22,9 +22,6 @@
 ## Features
 
 - Responsive design: The portfolio is optimized for various screen sizes, from desktop to mobile devices.
-- Projects Showcase: Highlight your projects, including descriptions, images, and links.
-- About Me: Provide a brief introduction about yourself and your skills.
-- Contact Information: Include your contact details or a contact form for inquiries.
 
 <br>
 
