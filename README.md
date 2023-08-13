@@ -1,5 +1,5 @@
 # Sample Portfolio #1
-**This is a personal portfolio website project for showcasing the work and skills. The portfolio is built using HTML, CSS, and JavaScript, and it is designed to be fully responsive to different screen sizes.**
+**This is a sample personal portfolio website project for showcasing the work and skills. The portfolio is built using HTML, CSS, and JavaScript, and it is designed to be fully responsive to different screen sizes.**
 
 <br>
 
